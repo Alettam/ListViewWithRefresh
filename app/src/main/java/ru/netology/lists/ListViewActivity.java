@@ -40,7 +40,7 @@ public class ListViewActivity extends AppCompatActivity {
 
         saveTxt = getSharedPreferences("MySavedText", MODE_PRIVATE);
 
-        initviews();
+        initViews();
 
 
         values = prepareContent();
@@ -50,7 +50,7 @@ public class ListViewActivity extends AppCompatActivity {
         list.setAdapter(listContentAdapter);
     }
 
-    private void initviews() {
+    private void initViews() {
         list = findViewById(R.id.list);
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
